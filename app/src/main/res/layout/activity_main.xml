@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/stopcounter"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:text="@string/start"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickStart"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/stop"
+        android:text="@string/stop"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="onClickStop"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:text="@string/reset"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:onClick="onClickReset"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
